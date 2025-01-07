@@ -1,5 +1,5 @@
-
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using ÜNY.Domain.Abstract;
@@ -8,7 +8,6 @@ using ÜNY.Domain.Data;
 using ÜNY.Domain.Entities;
 using ÜNY.Infrastructure.Abstract;
 using ÜNY.Infrastructure.Concrete;
-using ÜNY.WebAPI.HandlersAPI;
 
 namespace ÜNY.WebAPI
 {
@@ -78,6 +77,8 @@ namespace ÜNY.WebAPI
 
             builder.Services.AddIdentity<Users, Roles>(options =>
             {
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
@@ -85,9 +86,11 @@ namespace ÜNY.WebAPI
                 options.Password.RequiredLength = 8;
 
                 options.User.RequireUniqueEmail = false;
+                
 
             })
-                .AddEntityFrameworkStores<DataContext>();
+                .AddEntityFrameworkStores<DataContext>()
+                .AddDefaultTokenProviders();
         }
     }
 }

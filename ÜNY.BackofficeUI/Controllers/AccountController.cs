@@ -72,7 +72,7 @@ namespace ÜNY.BackofficeUI.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:7198");
+                client.BaseAddress = new Uri("http://localhost:5282");
 
                 var response = await client.PostAsync("/api/Account/logout", null);
 

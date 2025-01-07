@@ -57,23 +57,11 @@ namespace ÜNY.WebAPI.Controllers
 
                 user.Name = model.Name;
                 user.SurName = model.SurName;
-                //user.UserName = model.Name + model.SurName;
                 user.UserName = model.UserName;
                 user.IdNumber = model.IdNumber;
                 user.Password = model.Password;
                 user.RePassword = model.RePassword;
-                user.BirthPlace = null;
-                user.DateofBirth = null;
-                user.MotherName = null;
-                user.FatherName = null;
-                user.GenderId = null;
-                user.Gender = null;
-                user.Unit = null;
-                user.UnitId = null;
-                user.CoursesId = null;
-                user.courses = null;
-                user.ContactId = null;
-                user.Contactİnformation = null;
+
 
 
                 if (model.Password == model.RePassword)

@@ -395,7 +395,6 @@ namespace ÜNY.Domain.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserName")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 

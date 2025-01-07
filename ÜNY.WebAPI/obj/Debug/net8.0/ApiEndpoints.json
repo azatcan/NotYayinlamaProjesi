@@ -80,5 +80,215 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
+    "Method": "Add",
+    "RelativePath": "api/Contact\u0130nformation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.ContactModel.ContactViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
+    "Method": "Delete",
+    "RelativePath": "api/Contact\u0130nformation/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "\u00DCNY.WebAPI.Model.ContactModel.ContactRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
+    "Method": "List",
+    "RelativePath": "api/Contact\u0130nformation/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.GenderController",
+    "Method": "Add",
+    "RelativePath": "api/Gender/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.GenderModel.GenderViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.GenderController",
+    "Method": "Delete",
+    "RelativePath": "api/Gender/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "\u00DCNY.WebAPI.Model.GenderModel.GenderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.GenderController",
+    "Method": "List",
+    "RelativePath": "api/Gender/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.RoleController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.RoleModel.RoleUpdateViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.RoleController",
+    "Method": "Create",
+    "RelativePath": "api/Role/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.RoleModel.RoleViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.RoleController",
+    "Method": "Delete",
+    "RelativePath": "api/Role/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.RoleController",
+    "Method": "List",
+    "RelativePath": "api/Role/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Unit\u0130nformationController",
+    "Method": "Add",
+    "RelativePath": "api/Unit\u0130nformation/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.UnitModel.UnitViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Unit\u0130nformationController",
+    "Method": "Delete",
+    "RelativePath": "api/Unit\u0130nformation/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "\u00DCNY.WebAPI.Model.UnitModel.UnitRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Unit\u0130nformationController",
+    "Method": "List",
+    "RelativePath": "api/Unit\u0130nformation/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Unit\u0130nformationController",
+    "Method": "Update",
+    "RelativePath": "api/Unit\u0130nformation/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unit",
+        "Type": "\u00DCNY.Domain.Entities.Unit\u0130nformation",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

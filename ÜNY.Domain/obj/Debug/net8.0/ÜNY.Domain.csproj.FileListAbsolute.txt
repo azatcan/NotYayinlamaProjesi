@@ -12,3 +12,4 @@ C:\Users\azatc\source\repos\ÜniNotYayınlama\ÜNY.Domain\obj\Debug\net8.0\refin
 C:\Users\azatc\source\repos\ÜniNotYayınlama\ÜNY.Domain\obj\Debug\net8.0\ÜNY.Domain.pdb
 C:\Users\azatc\source\repos\ÜniNotYayınlama\ÜNY.Domain\obj\Debug\net8.0\ÜNY.Domain.genruntimeconfig.cache
 C:\Users\azatc\source\repos\ÜniNotYayınlama\ÜNY.Domain\obj\Debug\net8.0\ref\ÜNY.Domain.dll
+C:\Users\azatc\source\repos\ÜniNotYayınlama\ÜNY.Domain\obj\Debug\net8.0\ÜNY.Domain.sourcelink.json

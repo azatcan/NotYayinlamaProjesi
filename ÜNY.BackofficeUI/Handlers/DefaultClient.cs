@@ -68,6 +68,7 @@ namespace ÜNY.BackofficeUI.Handlers
                 formData.Add(new StringContent(model.Name), "Name");
                 formData.Add(new StringContent(model.SurName), "SurName");
                 formData.Add(new StringContent(model.UserName), "UserName");
+                formData.Add(new StringContent(model.IdNumber), "IdNumber");
                 formData.Add(new StringContent(model.Password), "Password");
                 formData.Add(new StringContent(model.RePassword), "RePassword");
 
