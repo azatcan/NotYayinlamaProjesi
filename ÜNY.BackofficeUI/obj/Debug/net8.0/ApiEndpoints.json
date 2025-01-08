@@ -100,7 +100,7 @@
   {
     "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
     "Method": "Delete",
-    "RelativePath": "api/Contact\u0130nformation/Delete",
+    "RelativePath": "api/Contact\u0130nformation/delete",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -117,6 +117,48 @@
     "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
     "Method": "List",
     "RelativePath": "api/Contact\u0130nformation/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.CoursesController",
+    "Method": "Add",
+    "RelativePath": "api/Courses/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.CoursesModel.CoursesViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.CoursesController",
+    "Method": "Delete",
+    "RelativePath": "api/Courses/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "\u00DCNY.WebAPI.Model.CoursesModel.CoursesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.CoursesController",
+    "Method": "List",
+    "RelativePath": "api/Courses/list",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -181,6 +223,22 @@
       {
         "Name": "model",
         "Type": "\u00DCNY.WebAPI.Model.RoleModel.RoleUpdateViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.RoleController",
+    "Method": "AssignRoleToUser",
+    "RelativePath": "api/Role/assignRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "\u00DCNY.WebAPI.Model.RoleModel.RoleAssignmentRequest",
         "IsRequired": true
       }
     ],

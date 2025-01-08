@@ -44,7 +44,7 @@ namespace ÜNY.WebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Delete")]
+        [Route("delete")]
         public IActionResult Delete([FromBody] ContactRequest request)
         {
             var del = _contact.GetById(request.Id);

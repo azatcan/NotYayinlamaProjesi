@@ -85,5 +85,34 @@ namespace ÜNY.WebAPI.Controllers
 
             return Ok();
         }
+
+        [HttpPost]
+        [Route("assignRole")]
+        public async Task<IActionResult> AssignRoleToUser([FromBody] RoleAssignmentRequest request)
+        {
+            var user = await _userManager.FindByIdAsync(request.UserId);
+            if (user == null)
+            {
+                return NotFound(new { message = "Kullanıcı bulunamadı" });
+            }
+
+            //if (!await _roleManager.RoleExistsAsync(request.Role))
+            //{
+            //    var roleResult = await _roleManager.CreateAsync(new IdentityRole(request.Role));
+            //    if (!roleResult.Succeeded)
+            //    {
+            //        return BadRequest(new { message = "Rol oluşturulamadı", errors = roleResult.Errors });
+            //    }
+            //}
+
+            var result = await _userManager.AddToRoleAsync(user, request.Role);
+            if (result.Succeeded)
+            {
+                return Ok(new { message = "Rol başarıyla atandı" });
+            }
+
+            return BadRequest(new { message = "Rol atanırken hata oluştu", errors = result.Errors });
+        }
     }
 }
+
