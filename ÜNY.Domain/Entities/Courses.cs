@@ -10,7 +10,7 @@ namespace ÜNY.Domain.Entities
     {
         public Guid Id { get; set; }
         public string CourseName { get; set; }
-        public Guid UnitId { get; set; }
-        public Unitİnformation Unit {  get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<CourseUnitInformation> CourseUnitInformations { get; set; }
     }
 }

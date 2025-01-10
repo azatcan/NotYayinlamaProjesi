@@ -44,6 +44,7 @@ namespace ÜNY.BackofficeUI.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+
             return View(new RegisterModel());
         }
 

@@ -71,6 +71,12 @@ namespace ÜNY.BackofficeUI.Handlers
                 formData.Add(new StringContent(model.IdNumber), "IdNumber");
                 formData.Add(new StringContent(model.Password), "Password");
                 formData.Add(new StringContent(model.RePassword), "RePassword");
+                formData.Add(new StringContent(model.DateofBirth.ToString("yyyy-MM-dd")), "DateofBirth");
+                formData.Add(new StringContent(model.BirthPlace), "BirthPlace");
+                formData.Add(new StringContent(model.MotherName), "MotherName");
+                formData.Add(new StringContent(model.FatherName), "FatherName");
+                formData.Add(new StringContent(model.GenderId.ToString()), "GenderId");
+                formData.Add(new StringContent(model.UnitİnformationId.ToString()), "UnitİnformationId");
 
                 if (model.ImagePath != null)
                 {

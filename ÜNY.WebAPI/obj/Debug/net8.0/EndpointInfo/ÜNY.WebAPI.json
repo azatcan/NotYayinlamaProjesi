@@ -59,6 +59,27 @@
                   "IdNumber": {
                     "type": "string"
                   },
+                  "DateofBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "BirthPlace": {
+                    "type": "string"
+                  },
+                  "MotherName": {
+                    "type": "string"
+                  },
+                  "FatherName": {
+                    "type": "string"
+                  },
+                  "GenderId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "UnitİnformationId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
                   "Password": {
                     "type": "string"
                   },
@@ -68,6 +89,18 @@
                   "ImagePath": {
                     "type": "string",
                     "format": "binary"
+                  },
+                  "GenderList": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/SelectListItem"
+                    }
+                  },
+                  "UnitList": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/SelectListItem"
+                    }
                   }
                 }
               },
@@ -84,6 +117,24 @@
                 "IdNumber": {
                   "style": "form"
                 },
+                "DateofBirth": {
+                  "style": "form"
+                },
+                "BirthPlace": {
+                  "style": "form"
+                },
+                "MotherName": {
+                  "style": "form"
+                },
+                "FatherName": {
+                  "style": "form"
+                },
+                "GenderId": {
+                  "style": "form"
+                },
+                "UnitİnformationId": {
+                  "style": "form"
+                },
                 "Password": {
                   "style": "form"
                 },
@@ -91,6 +142,12 @@
                   "style": "form"
                 },
                 "ImagePath": {
+                  "style": "form"
+                },
+                "GenderList": {
+                  "style": "form"
+                },
+                "UnitList": {
                   "style": "form"
                 }
               }
@@ -117,6 +174,30 @@
       }
     },
     "/api/Account/getUserRoles": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/getGenderlist": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/getUnitlist": {
       "get": {
         "tags": [
           "Account"
@@ -602,6 +683,18 @@
           }
         }
       }
+    },
+    "/api/Users/list": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -634,6 +727,87 @@
         },
         "additionalProperties": false
       },
+      "Contactİnformation": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "addrees": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user": {
+            "$ref": "#/components/schemas/Users"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CourseUnitInformation": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "course": {
+            "$ref": "#/components/schemas/Courses"
+          },
+          "unitInformationId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "unitİnformation": {
+            "$ref": "#/components/schemas/Unitİnformation"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Courses": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "courseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "enrollments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Enrollment"
+            },
+            "nullable": true
+          },
+          "courseUnitInformations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CourseUnitInformation"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CoursesRequest": {
         "type": "object",
         "properties": {
@@ -654,6 +828,95 @@
           "unitId": {
             "type": "string",
             "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Enrollment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "users": {
+            "$ref": "#/components/schemas/Users"
+          },
+          "courseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "course": {
+            "$ref": "#/components/schemas/Courses"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Feeİnformation": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "yourReferenceNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "yourCurrentDebt": {
+            "type": "number",
+            "format": "double"
+          },
+          "period": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "debtType": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "user": {
+            "$ref": "#/components/schemas/Users"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Gender": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Users"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -730,6 +993,42 @@
         },
         "additionalProperties": false
       },
+      "SelectListGroup": {
+        "type": "object",
+        "properties": {
+          "disabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SelectListItem": {
+        "type": "object",
+        "properties": {
+          "disabled": {
+            "type": "boolean"
+          },
+          "group": {
+            "$ref": "#/components/schemas/SelectListGroup"
+          },
+          "selected": {
+            "type": "boolean"
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UnitRequest": {
         "type": "object",
         "properties": {
@@ -766,6 +1065,159 @@
             "nullable": true
           },
           "unitName": {
+            "type": "string",
+            "nullable": true
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Users"
+            },
+            "nullable": true
+          },
+          "courseUnitInformations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CourseUnitInformation"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Users": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailConfirmed": {
+            "type": "boolean"
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "concurrencyStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumberConfirmed": {
+            "type": "boolean"
+          },
+          "twoFactorEnabled": {
+            "type": "boolean"
+          },
+          "lockoutEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lockoutEnabled": {
+            "type": "boolean"
+          },
+          "accessFailedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateofBirth": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "birthPlace": {
+            "type": "string",
+            "nullable": true
+          },
+          "motherName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fatherName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "rePassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "gender": {
+            "$ref": "#/components/schemas/Gender"
+          },
+          "unitİnformationId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "unitİnformation": {
+            "$ref": "#/components/schemas/Unitİnformation"
+          },
+          "enrollments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Enrollment"
+            },
+            "nullable": true
+          },
+          "contactİnformation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Contactİnformation"
+            },
+            "nullable": true
+          },
+          "feeİnformation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Feeİnformation"
+            },
+            "nullable": true
+          },
+          "imagePath": {
             "type": "string",
             "nullable": true
           }

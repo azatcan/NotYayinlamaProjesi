@@ -41,7 +41,145 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
+
                             <form class="user" method="post" asp-antiforgery="true" enctype="multipart/form-data">
+                                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+                                <!-- Name -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="Name"
+                                               placeholder="Name" asp-for="Name" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="Name"></span>
+                                    </div>
+                                </div>
+
+                                <!-- SurName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="SurName"
+                                               placeholder="SurName" asp-for="SurName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="SurName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- UserName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="UserName"
+                                               placeholder="UserName" asp-for="UserName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="UserName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- IdNumber -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="IdNumber"
+                                               placeholder="TC Kimlik Numarası" asp-for="IdNumber" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="IdNumber"></span>
+                                    </div>
+                                </div>
+
+                                <!-- DateOfBirth -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="date" class="form-control form-control-user" id="DateofBirth"
+                                               placeholder="Doğum Tarihi" asp-for="DateofBirth" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="DateofBirth"></span>
+                                    </div>
+                                </div>
+
+                                <!-- BirthPlace -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="BirthPlace"
+                                               placeholder="Doğum Yeri" asp-for="BirthPlace" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="BirthPlace"></span>
+                                    </div>
+                                </div>
+
+                                <!-- MotherName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="MotherName"
+                                               placeholder="Anne Adı" asp-for="MotherName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="MotherName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- FatherName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="FatherName"
+                                               placeholder="Baba Adı" asp-for="FatherName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="FatherName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Gender Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label for="GenderId">Cinsiyet</label>
+                                        <select asp-for="GenderId" class="form-control" asp-items="Model.GenderList"></select>
+                                        <span class="text-danger" asp-validation-for="GenderId"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Unit Information Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label for="UnitİnformationId">Bölüm</label>
+                                        <select asp-for="UnitİnformationId" class="form-control" asp-items="Model.UnitList"></select>
+                                        <span class="text-danger" asp-validation-for="UnitİnformationId"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="Password" placeholder="Password" asp-for="Password" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="Password"></span>
+                                    </div>
+
+                                    <!-- RePassword -->
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="RePassword" placeholder="RePassword" asp-for="RePassword" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="RePassword"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Image Path (User Image) -->
+                                <div class="form-group row">
+                                    <label for="ImagePath">Kullanıcı Görseli</label>
+                                    <input type="file" class="form-control" name="ImagePath" />
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
+
+                                <hr>
+
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+
+                @*             <form class="user" method="post" asp-antiforgery="true" enctype="multipart/form-data">
                                 <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
                                 <div class="form-group row">
@@ -119,7 +257,7 @@
                                 <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                     <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
                                 </a>
-                            </form>
+                            </form> *@
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="forgot-password.html">Forgot Password?</a>

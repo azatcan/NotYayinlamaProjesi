@@ -12,7 +12,7 @@ using ÜNY.Domain.Data;
 namespace ÜNY.Domain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250107110222_İnit")]
+    [Migration("20250110111546_İnit")]
     partial class İnit
     {
         /// <inheritdoc />
@@ -146,9 +146,32 @@ namespace ÜNY.Domain.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Contactİnformation");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.CourseUnitInformation", b =>
+                {
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UnitInformationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CourseId", "UnitInformationId");
+
+                    b.HasIndex("UnitInformationId");
+
+                    b.ToTable("CoursesUnitInformation");
                 });
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Courses", b =>
@@ -161,12 +184,7 @@ namespace ÜNY.Domain.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UnitId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UnitId");
 
                     b.ToTable("Courses");
                 });
@@ -177,28 +195,66 @@ namespace ÜNY.Domain.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("CourseId1")
+                    b.Property<Guid>("CourseId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal?>("Grade")
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Enrollment");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Exam", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Exams");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.ExamGrade", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ExamId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Grade")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UsersId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("CourseId1");
+                    b.HasIndex("ExamId");
 
-                    b.HasIndex("UsersId");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("Enrollment");
+                    b.ToTable("ExamGrades");
                 });
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Feeİnformation", b =>
@@ -221,6 +277,9 @@ namespace ÜNY.Domain.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<decimal>("YourCurrentDebt")
                         .HasColumnType("decimal(18,2)");
 
@@ -231,6 +290,8 @@ namespace ÜNY.Domain.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Feeİnformation");
                 });
@@ -313,15 +374,6 @@ namespace ÜNY.Domain.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ContactId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("ContactİnformationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CoursesId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime?>("DateofBirth")
                         .HasColumnType("datetime2");
 
@@ -335,7 +387,7 @@ namespace ÜNY.Domain.Migrations
                     b.Property<string>("FatherName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("GenderId")
+                    b.Property<Guid>("GenderId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("IdNumber")
@@ -394,7 +446,7 @@ namespace ÜNY.Domain.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("UnitId")
+                    b.Property<Guid>("UnitİnformationId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserName")
@@ -402,10 +454,6 @@ namespace ÜNY.Domain.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ContactİnformationId");
-
-                    b.HasIndex("CoursesId");
 
                     b.HasIndex("GenderId");
 
@@ -417,7 +465,7 @@ namespace ÜNY.Domain.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("UnitId");
+                    b.HasIndex("UnitİnformationId");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -473,28 +521,47 @@ namespace ÜNY.Domain.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ÜNY.Domain.Entities.Courses", b =>
+            modelBuilder.Entity("ÜNY.Domain.Entities.Contactİnformation", b =>
                 {
-                    b.HasOne("ÜNY.Domain.Entities.Unitİnformation", "Unit")
-                        .WithMany()
-                        .HasForeignKey("UnitId")
+                    b.HasOne("ÜNY.Domain.Entities.Users", "User")
+                        .WithMany("Contactİnformation")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Unit");
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.CourseUnitInformation", b =>
+                {
+                    b.HasOne("ÜNY.Domain.Entities.Courses", "Course")
+                        .WithMany("CourseUnitInformations")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ÜNY.Domain.Entities.Unitİnformation", "Unitİnformation")
+                        .WithMany("CourseUnitInformations")
+                        .HasForeignKey("UnitInformationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Unitİnformation");
                 });
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Enrollment", b =>
                 {
                     b.HasOne("ÜNY.Domain.Entities.Courses", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId1")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ÜNY.Domain.Entities.Users", "Users")
-                        .WithMany()
-                        .HasForeignKey("UsersId")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -503,31 +570,92 @@ namespace ÜNY.Domain.Migrations
                     b.Navigation("Users");
                 });
 
+            modelBuilder.Entity("ÜNY.Domain.Entities.Exam", b =>
+                {
+                    b.HasOne("ÜNY.Domain.Entities.Courses", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.ExamGrade", b =>
+                {
+                    b.HasOne("ÜNY.Domain.Entities.Exam", "Exam")
+                        .WithMany()
+                        .HasForeignKey("ExamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ÜNY.Domain.Entities.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Exam");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Feeİnformation", b =>
+                {
+                    b.HasOne("ÜNY.Domain.Entities.Users", "User")
+                        .WithMany("Feeİnformation")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
                 {
-                    b.HasOne("ÜNY.Domain.Entities.Contactİnformation", "Contactİnformation")
-                        .WithMany()
-                        .HasForeignKey("ContactİnformationId");
-
-                    b.HasOne("ÜNY.Domain.Entities.Courses", "courses")
-                        .WithMany()
-                        .HasForeignKey("CoursesId");
-
                     b.HasOne("ÜNY.Domain.Entities.Gender", "Gender")
-                        .WithMany()
-                        .HasForeignKey("GenderId");
+                        .WithMany("Users")
+                        .HasForeignKey("GenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("ÜNY.Domain.Entities.Unitİnformation", "Unit")
-                        .WithMany()
-                        .HasForeignKey("UnitId");
-
-                    b.Navigation("Contactİnformation");
+                    b.HasOne("ÜNY.Domain.Entities.Unitİnformation", "Unitİnformation")
+                        .WithMany("Users")
+                        .HasForeignKey("UnitİnformationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Gender");
 
-                    b.Navigation("Unit");
+                    b.Navigation("Unitİnformation");
+                });
 
-                    b.Navigation("courses");
+            modelBuilder.Entity("ÜNY.Domain.Entities.Courses", b =>
+                {
+                    b.Navigation("CourseUnitInformations");
+
+                    b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Gender", b =>
+                {
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Unitİnformation", b =>
+                {
+                    b.Navigation("CourseUnitInformations");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
+                {
+                    b.Navigation("Contactİnformation");
+
+                    b.Navigation("Enrollments");
+
+                    b.Navigation("Feeİnformation");
                 });
 #pragma warning restore 612, 618
         }

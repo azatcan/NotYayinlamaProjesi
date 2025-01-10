@@ -1,6 +1,26 @@
 [
   {
     "ContainingType": "\u00DCNY.WebAPI.Controllers.AccountController",
+    "Method": "GetGenderList",
+    "RelativePath": "api/Account/getGenderlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.AccountController",
+    "Method": "GetUnitList",
+    "RelativePath": "api/Account/getUnitlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.AccountController",
     "Method": "GetUserRoles",
     "RelativePath": "api/Account/getUserRoles",
     "HttpMethod": "GET",
@@ -64,6 +84,36 @@
         "IsRequired": false
       },
       {
+        "Name": "DateofBirth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "BirthPlace",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GenderId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Unit\u0130nformationId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
         "Name": "Password",
         "Type": "System.String",
         "IsRequired": false
@@ -76,6 +126,16 @@
       {
         "Name": "ImagePath",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "GenderList",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem, Microsoft.AspNetCore.Mvc.ViewFeatures, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UnitList",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem, Microsoft.AspNetCore.Mvc.ViewFeatures, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
         "IsRequired": false
       }
     ],
@@ -347,6 +407,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.UsersController",
+    "Method": "List",
+    "RelativePath": "api/Users/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

@@ -26,35 +26,15 @@ namespace ÜNY.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Contactİnformation",
+                name: "Courses",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Addrees = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CourseName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Contactİnformation", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Feeİnformation",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    YourReferenceNumber = table.Column<int>(type: "int", nullable: false),
-                    YourCurrentDebt = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    period = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DebtType = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Feeİnformation", x => x.Id);
+                    table.PrimaryKey("PK_Courses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -103,20 +83,21 @@ namespace ÜNY.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Courses",
+                name: "Exams",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CourseName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UnitId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Courses", x => x.Id);
+                    table.PrimaryKey("PK_Exams", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Courses_Unitİnformation_UnitId",
-                        column: x => x.UnitId,
-                        principalTable: "Unitİnformation",
+                        name: "FK_Exams_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
                         principalColumn: "Id");
                 });
 
@@ -134,11 +115,8 @@ namespace ÜNY.Domain.Migrations
                     FatherName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RePassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    UnitId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    CoursesId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    ContactId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    ContactİnformationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    GenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UnitİnformationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -159,23 +137,36 @@ namespace ÜNY.Domain.Migrations
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_Contactİnformation_ContactİnformationId",
-                        column: x => x.ContactİnformationId,
-                        principalTable: "Contactİnformation",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_AspNetUsers_Courses_CoursesId",
-                        column: x => x.CoursesId,
-                        principalTable: "Courses",
-                        principalColumn: "Id");
-                    table.ForeignKey(
                         name: "FK_AspNetUsers_Gender_GenderId",
                         column: x => x.GenderId,
                         principalTable: "Gender",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_Unitİnformation_UnitId",
-                        column: x => x.UnitId,
+                        name: "FK_AspNetUsers_Unitİnformation_UnitİnformationId",
+                        column: x => x.UnitİnformationId,
+                        principalTable: "Unitİnformation",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CoursesUnitInformation",
+                columns: table => new
+                {
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UnitInformationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CoursesUnitInformation", x => new { x.CourseId, x.UnitInformationId });
+                    table.ForeignKey(
+                        name: "FK_CoursesUnitInformation_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_CoursesUnitInformation_Unitİnformation_UnitInformationId",
+                        column: x => x.UnitInformationId,
                         principalTable: "Unitİnformation",
                         principalColumn: "Id");
                 });
@@ -261,28 +252,93 @@ namespace ÜNY.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Contactİnformation",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Addrees = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Contactİnformation", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Contactİnformation_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Enrollment",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UsersId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    CourseId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Grade = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
+                    CourseId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Enrollment", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Enrollment_AspNetUsers_UsersId",
-                        column: x => x.UsersId,
+                        name: "FK_Enrollment_AspNetUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Enrollment_Courses_CourseId1",
-                        column: x => x.CourseId1,
+                        name: "FK_Enrollment_Courses_CourseId",
+                        column: x => x.CourseId,
                         principalTable: "Courses",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ExamGrades",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExamId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Grade = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ExamGrades", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ExamGrades_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_ExamGrades_Exams_ExamId",
+                        column: x => x.ExamId,
+                        principalTable: "Exams",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Feeİnformation",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    YourReferenceNumber = table.Column<int>(type: "int", nullable: false),
+                    YourCurrentDebt = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    period = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DebtType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<bool>(type: "bit", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Feeİnformation", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Feeİnformation_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
@@ -319,24 +375,14 @@ namespace ÜNY.Domain.Migrations
                 column: "NormalizedEmail");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_ContactİnformationId",
-                table: "AspNetUsers",
-                column: "ContactİnformationId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_CoursesId",
-                table: "AspNetUsers",
-                column: "CoursesId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_GenderId",
                 table: "AspNetUsers",
                 column: "GenderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_UnitId",
+                name: "IX_AspNetUsers_UnitİnformationId",
                 table: "AspNetUsers",
-                column: "UnitId");
+                column: "UnitİnformationId");
 
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
@@ -346,19 +392,44 @@ namespace ÜNY.Domain.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Courses_UnitId",
-                table: "Courses",
-                column: "UnitId");
+                name: "IX_Contactİnformation_UserId",
+                table: "Contactİnformation",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Enrollment_CourseId1",
-                table: "Enrollment",
-                column: "CourseId1");
+                name: "IX_CoursesUnitInformation_UnitInformationId",
+                table: "CoursesUnitInformation",
+                column: "UnitInformationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Enrollment_UsersId",
+                name: "IX_Enrollment_CourseId",
                 table: "Enrollment",
-                column: "UsersId");
+                column: "CourseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Enrollment_UserId",
+                table: "Enrollment",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExamGrades_ExamId",
+                table: "ExamGrades",
+                column: "ExamId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExamGrades_UserId",
+                table: "ExamGrades",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Exams_CourseId",
+                table: "Exams",
+                column: "CourseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Feeİnformation_UserId",
+                table: "Feeİnformation",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -380,7 +451,16 @@ namespace ÜNY.Domain.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "Contactİnformation");
+
+            migrationBuilder.DropTable(
+                name: "CoursesUnitInformation");
+
+            migrationBuilder.DropTable(
                 name: "Enrollment");
+
+            migrationBuilder.DropTable(
+                name: "ExamGrades");
 
             migrationBuilder.DropTable(
                 name: "Feeİnformation");
@@ -389,10 +469,10 @@ namespace ÜNY.Domain.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
+                name: "Exams");
 
             migrationBuilder.DropTable(
-                name: "Contactİnformation");
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "Courses");

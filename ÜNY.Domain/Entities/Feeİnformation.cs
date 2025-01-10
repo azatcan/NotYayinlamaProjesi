@@ -18,6 +18,8 @@ namespace ÜNY.Domain.Entities
         public decimal Amount { get; set; }
         public string Description { get; set; }
         public bool Status { get; set; }
+        public Guid UserId { get; set; }
+        public Users User { get; set; }
 
 
     }

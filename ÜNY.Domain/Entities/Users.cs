@@ -18,14 +18,13 @@ namespace ÜNY.Domain.Entities
         public string? FatherName { get; set; }
         public string Password { get; set; }
         public string RePassword { get; set; }
-        public Guid? GenderId { get; set; }
-        public Gender? Gender { get; set; }
-        public Guid? UnitId { get; set; }
-        public Unitİnformation? Unit {  get; set; }
-        public Guid? CoursesId { get; set; }
-        public Courses? courses { get; set; }
-        public Guid? ContactId { get; set; }
-        public Contactİnformation? Contactİnformation { get; set; }
+        public Guid GenderId { get; set; }
+        public Gender Gender { get; set; }
+        public Guid UnitİnformationId { get; set; }
+        public Unitİnformation Unitİnformation { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<Contactİnformation> Contactİnformation { get; set; }
+        public ICollection<Feeİnformation> Feeİnformation { get; set; }
 
         public string ImagePath { get; set; }     
     }
