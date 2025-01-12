@@ -89,18 +89,6 @@
                   "ImagePath": {
                     "type": "string",
                     "format": "binary"
-                  },
-                  "GenderList": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/SelectListItem"
-                    }
-                  },
-                  "UnitList": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/SelectListItem"
-                    }
                   }
                 }
               },
@@ -142,12 +130,6 @@
                   "style": "form"
                 },
                 "ImagePath": {
-                  "style": "form"
-                },
-                "GenderList": {
-                  "style": "form"
-                },
-                "UnitList": {
                   "style": "form"
                 }
               }
@@ -202,6 +184,49 @@
         "tags": [
           "Account"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AdminPendingUser/Pendingusers": {
+      "get": {
+        "tags": [
+          "AdminPendingUser"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AdminPendingUser/Approveuser": {
+      "post": {
+        "tags": [
+          "AdminPendingUser"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminUserAproveViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminUserAproveViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminUserAproveViewModel"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -699,6 +724,16 @@
   },
   "components": {
     "schemas": {
+      "AdminUserAproveViewModel": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "ContactRequest": {
         "type": "object",
         "properties": {
@@ -993,42 +1028,6 @@
         },
         "additionalProperties": false
       },
-      "SelectListGroup": {
-        "type": "object",
-        "properties": {
-          "disabled": {
-            "type": "boolean"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "SelectListItem": {
-        "type": "object",
-        "properties": {
-          "disabled": {
-            "type": "boolean"
-          },
-          "group": {
-            "$ref": "#/components/schemas/SelectListGroup"
-          },
-          "selected": {
-            "type": "boolean"
-          },
-          "text": {
-            "type": "string",
-            "nullable": true
-          },
-          "value": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "UnitRequest": {
         "type": "object",
         "properties": {
@@ -1192,6 +1191,9 @@
           "unitİnformationId": {
             "type": "string",
             "format": "uuid"
+          },
+          "isApproved": {
+            "type": "boolean"
           },
           "unitİnformation": {
             "$ref": "#/components/schemas/Unitİnformation"

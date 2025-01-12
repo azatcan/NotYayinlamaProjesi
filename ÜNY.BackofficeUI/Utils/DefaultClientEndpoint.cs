@@ -19,5 +19,11 @@
             public const string List = "/api/Users/list";
             
         }
+
+        public struct AdminAprove
+        {
+            public const string list = "api/AdminPendingUser/Pendingusers";
+            public const string aprove = "api/AdminPendingUser/Approveuser";
+        }
     }
 }

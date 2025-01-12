@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\475306d4-12c7-4f86-9112-2cf63324cafd.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\475306d4-12c7-4f86-9112-2cf63324cafd.jpg"
+    },
+    {
       "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\52ded68a-a65b-4313-9af4-df5182fcd76d.jpg",
       "PackagePath": "staticwebassets\\resimler\\user\\52ded68a-a65b-4313-9af4-df5182fcd76d.jpg"
     },
@@ -9,16 +21,48 @@
       "PackagePath": "staticwebassets\\resimler\\user\\5765ef46-2ddf-4588-b899-504fa9396f59.jpg"
     },
     {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg"
+    },
+    {
       "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\648ba916-6fe4-4895-8271-627f18b7432e.jpg",
       "PackagePath": "staticwebassets\\resimler\\user\\648ba916-6fe4-4895-8271-627f18b7432e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\65bbd23c-ccb0-4169-bac6-df4a904e2ca2.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\65bbd23c-ccb0-4169-bac6-df4a904e2ca2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\79e459db-62fa-4870-8670-24a0886c03e0.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\79e459db-62fa-4870-8670-24a0886c03e0.jpg"
     },
     {
       "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\84f9bfac-f48c-4334-b7f6-dc61c4c5517a.jpg",
       "PackagePath": "staticwebassets\\resimler\\user\\84f9bfac-f48c-4334-b7f6-dc61c4c5517a.jpg"
     },
     {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg"
+    },
+    {
       "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg",
       "PackagePath": "staticwebassets\\resimler\\user\\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg",
+      "PackagePath": "staticwebassets\\resimler\\user\\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ÜNY.WebAPI.props",

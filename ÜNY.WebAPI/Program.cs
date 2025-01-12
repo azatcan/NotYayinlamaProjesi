@@ -17,7 +17,15 @@ namespace ÜNY.WebAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
             builder.Services.AddControllers();
             builder.Services.AddDbContext<DataContext>(conf => conf.UseSqlServer(builder.Configuration.GetConnectionString("DefalutConnection")));
             builder.Services.AddEndpointsApiExplorer();
@@ -39,7 +47,7 @@ namespace ÜNY.WebAPI
             //app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseCors("AllowAllOrigins");
 
             app.MapControllers();
 

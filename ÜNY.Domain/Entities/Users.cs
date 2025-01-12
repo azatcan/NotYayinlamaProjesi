@@ -21,6 +21,7 @@ namespace ÜNY.Domain.Entities
         public Guid GenderId { get; set; }
         public Gender Gender { get; set; }
         public Guid UnitİnformationId { get; set; }
+        public bool IsApproved { get; set; }
         public Unitİnformation Unitİnformation { get; set; }
         public ICollection<Enrollment> Enrollments { get; set; }
         public ICollection<Contactİnformation> Contactİnformation { get; set; }

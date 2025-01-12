@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using NuGet.Protocol.Plugins;
 using ÜNY.BackofficeUI.Handlers;
 using ÜNY.BackofficeUI.Utils;
+using ÜNY.Domain.Entities;
 using ÜNY.WebAPI.Model.AccountModel;
 
 namespace ÜNY.BackofficeUI.Controllers
@@ -19,6 +22,7 @@ namespace ÜNY.BackofficeUI.Controllers
         {
             return View(new LoginModel());
         }
+
         [HttpPost]
         public async Task<IActionResult> login(LoginModel model)
         {
@@ -42,9 +46,8 @@ namespace ÜNY.BackofficeUI.Controllers
             return View(model);
         }
         [HttpGet]
-        public IActionResult Register()
+        public async Task<IActionResult> Register()        
         {
-
             return View(new RegisterModel());
         }
 
@@ -53,15 +56,16 @@ namespace ÜNY.BackofficeUI.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 var response = await client.PostAsync(DefaultClientEndpoint.Authentice.Register, model);
                 if (response != null && response.Success == true)
                 {
-
+                    
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    HttpContext.Session.SetString("UserName", model.UserName);
+                    TempData["Message"] = "Kayıt başarılı. Admin onayını bekleyiniz.";
+                    //HttpContext.Session.SetString("UserName", model.UserName);
                     return RedirectToAction("Index", "Home");
                 }
 

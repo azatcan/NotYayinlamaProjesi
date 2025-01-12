@@ -32,6 +32,9 @@ namespace ÜNY.WebAPI.Controllers
             {
                 return NotFound();
             }
+            //await _context.Users
+            //.Include(u => u.Unitİnformation)  
+            //.FirstOrDefaultAsync(u => u.Id == currentUser.Id);
             return Ok(currentUser);
         }
     }

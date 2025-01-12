@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Data.Entity;
 using ÜNY.Domain.Data;
 using ÜNY.Domain.Entities;
+using ÜNY.Infrastructure.Abstract;
 using ÜNY.WebAPI.Model.AccountModel;
 
 namespace ÜNY.WebAPI.Controllers
@@ -17,14 +18,18 @@ namespace ÜNY.WebAPI.Controllers
         private readonly RoleManager<Roles> _roleManager;
         private readonly SignInManager<Users> _signInManager;
         public readonly IWebHostEnvironment _webHost;
+        IUnitİnformationService _unit;
+        IGenderService _genderService;
         DataContext _context;
 
-        public AccountController(UserManager<Users> userManager, RoleManager<Roles> roleManager, SignInManager<Users> signInManager, IWebHostEnvironment webHost, DataContext context)
+        public AccountController(UserManager<Users> userManager, RoleManager<Roles> roleManager, SignInManager<Users> signInManager, IWebHostEnvironment webHost, IUnitİnformationService unit, IGenderService genderService, DataContext context)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
             _webHost = webHost;
+            _unit = unit;
+            _genderService = genderService;
             _context = context;
         }
 
@@ -33,12 +38,16 @@ namespace ÜNY.WebAPI.Controllers
         public async Task<IActionResult> Login(LoginModel model)
         {
             var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, isPersistent: false, lockoutOnFailure: false);
-
+            var user = await _userManager.FindByNameAsync(model.UserName);
             if (result.Succeeded)
             {
+                if (!user.IsApproved) {
+                    return new JsonResult(new { Message = "Hesabınız henüz onaylanmamış. Lütfen admin onayını bekleyin." }) { StatusCode = 401 };
+                }
+
                 return new JsonResult(new { Message = "Login successful." }) { StatusCode = 200 };
             }
-            return new JsonResult(new { Message = "Unauthorized access." }) { StatusCode = 401 };
+            return NoContent();
         }
 
         [HttpPost]
@@ -72,6 +81,7 @@ namespace ÜNY.WebAPI.Controllers
                 user.MotherName = model.MotherName;
                 user.GenderId = model.GenderId;
                 user.UnitİnformationId = model.UnitİnformationId;
+                user.IsApproved = false;
 
 
 
@@ -81,8 +91,9 @@ namespace ÜNY.WebAPI.Controllers
                     await _userManager.AddToRoleAsync(user, "User");
                     if (result.Succeeded)
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return NoContent();
+                        return Ok(new { message = "Kayıt işlemi başarılı. Admin onayı bekleniyor." });
+                        //await _signInManager.SignInAsync(user, isPersistent: false);
+                        //return NoContent();
                     }
 
                     return BadRequest(result.Errors);
@@ -113,12 +124,7 @@ namespace ÜNY.WebAPI.Controllers
         [Route("getGenderlist")]
         public async Task<IActionResult> GetGenderList()
         {
-            var genderList = await _context.Gender
-                .Select(g => new SelectListItem
-                {
-                    Value = g.Id.ToString(),
-                    Text = g.Name
-                }).ToListAsync();
+            var genderList = _genderService.List();
 
             return Ok(genderList);
         }
@@ -127,12 +133,7 @@ namespace ÜNY.WebAPI.Controllers
         [Route("getUnitlist")]
         public async Task<IActionResult> GetUnitList()
         {
-            var unitList = await _context.Unitİnformation
-                .Select(u => new SelectListItem
-                {
-                    Value = u.Id.ToString(),
-                    Text = u.UnitName
-                }).ToListAsync();
+            var unitList = _unit.List();
 
             return Ok(unitList);
         }

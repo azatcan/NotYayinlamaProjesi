@@ -1,5 +1,59 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u5ge4cndum</Fingerprint>
+      <Integrity>Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u5ge4cndum</Fingerprint>
+      <Integrity>Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\475306d4-12c7-4f86-9112-2cf63324cafd.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/475306d4-12c7-4f86-9112-2cf63324cafd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u5ge4cndum</Fingerprint>
+      <Integrity>Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\475306d4-12c7-4f86-9112-2cf63324cafd.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\52ded68a-a65b-4313-9af4-df5182fcd76d.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ÜNY.WebAPI</SourceId>
@@ -36,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\5765ef46-2ddf-4588-b899-504fa9396f59.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ynlwozx636</Fingerprint>
+      <Integrity>Urab0Cp0JafE1AGrfPaDiCs6zDnuLMrBctip+8nileQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\648ba916-6fe4-4895-8271-627f18b7432e.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ÜNY.WebAPI</SourceId>
@@ -53,6 +125,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\648ba916-6fe4-4895-8271-627f18b7432e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\65bbd23c-ccb0-4169-bac6-df4a904e2ca2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/65bbd23c-ccb0-4169-bac6-df4a904e2ca2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u5ge4cndum</Fingerprint>
+      <Integrity>Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\65bbd23c-ccb0-4169-bac6-df4a904e2ca2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\79e459db-62fa-4870-8670-24a0886c03e0.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/79e459db-62fa-4870-8670-24a0886c03e0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bfvfj2oee3</Fingerprint>
+      <Integrity>KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\79e459db-62fa-4870-8670-24a0886c03e0.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\84f9bfac-f48c-4334-b7f6-dc61c4c5517a.jpg'))">
       <SourceType>Package</SourceType>
@@ -72,6 +180,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\84f9bfac-f48c-4334-b7f6-dc61c4c5517a.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ikpsd9ovoh</Fingerprint>
+      <Integrity>jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bfvfj2oee3</Fingerprint>
+      <Integrity>KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ÜNY.WebAPI</SourceId>
@@ -89,6 +233,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bfvfj2oee3</Fingerprint>
+      <Integrity>KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bfvfj2oee3</Fingerprint>
+      <Integrity>KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ÜNY.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ÜNY.WebAPI</BasePath>
+      <RelativePath>resimler/user/f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ynlwozx636</Fingerprint>
+      <Integrity>Urab0Cp0JafE1AGrfPaDiCs6zDnuLMrBctip+8nileQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\resimler\user\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

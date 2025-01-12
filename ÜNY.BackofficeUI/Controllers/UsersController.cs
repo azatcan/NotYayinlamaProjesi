@@ -16,12 +16,8 @@ namespace ÜNY.BackofficeUI.Controllers
 
         public async Task<IActionResult> List()
         {
-
-
             var user = await client.GetAsync<Users>(DefaultClientEndpoint.Users.List);
             return View(user);
-
-
         }
     }
 }

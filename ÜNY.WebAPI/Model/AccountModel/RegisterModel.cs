@@ -18,7 +18,10 @@ namespace ÜNY.WebAPI.Model.AccountModel
         public string RePassword { get; set; }
         public IFormFile ImagePath { get; set; }
 
-        public IEnumerable<SelectListItem> GenderList { get; set; }
-        public IEnumerable<SelectListItem> UnitList { get; set; }
+        //public IEnumerable<SelectListItem> GenderList { get; set; }
+        //public IEnumerable<SelectListItem> UnitList { get; set; }
+
+        //public List<SelectListItem> Units { get; set; }
+        //public List<SelectListItem> Genders { get; set; }
     }
 }

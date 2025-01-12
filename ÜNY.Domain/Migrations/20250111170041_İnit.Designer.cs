@@ -12,7 +12,7 @@ using ÜNY.Domain.Data;
 namespace ÜNY.Domain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250110111546_İnit")]
+    [Migration("20250111170041_İnit")]
     partial class İnit
     {
         /// <inheritdoc />
@@ -397,6 +397,9 @@ namespace ÜNY.Domain.Migrations
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");

@@ -3,100 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\utils\\defaultclientendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\utils\\defaultclientendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\unit\u0130nformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\unit\u0130nformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\gendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\gendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\views\\users\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\views\\users\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\examgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\examgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\fee\u0130nformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\fee\u0130nformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.domain\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73883FC8-801A-4D49-9581-E32C8EB8742D}|\u00DCNY.Domain\\\u00DCNY.Domain.csproj|solutionrelative:\u00FCny.domain\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\unit\u0130nformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\unit\u0130nformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\model\\rolemodel\\roleassignmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\model\\rolemodel\\roleassignmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,300 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 328,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAYwHEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:39:29.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAYwD4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:17:25.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DefaultClient.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:06:36.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:35:19.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Unit\u0130nformation.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Unit\u0130nformation.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Unit\u0130nformation.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Unit\u0130nformation.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Unit\u0130nformation.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T09:47:19.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:05:23.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DefaultClientEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Utils\\DefaultClientEndpoint.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Utils\\DefaultClientEndpoint.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Utils\\DefaultClientEndpoint.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Utils\\DefaultClientEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:06:50.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Data\\DataContext.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Data\\DataContext.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:14:17.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GenderController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\GenderController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\GenderController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\GenderController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\GenderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:20:40.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Gender.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Gender.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Gender.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T09:47:25.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Fee\u0130nformation.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Fee\u0130nformation.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Fee\u0130nformation.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Fee\u0130nformation.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Fee\u0130nformation.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T09:49:08.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Enrollment.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Enrollment.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Enrollment.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Enrollment.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Enrollment.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T09:49:27.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Exam.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Exam.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Exam.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Exam.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:25:17.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAQwEUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T10:20:40.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ExamGrade.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\ExamGrade.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\ExamGrade.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\ExamGrade.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\ExamGrade.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:26:15.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Roles.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Roles.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Roles.cs",
-              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T09:47:24.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Unit\u0130nformationController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\Unit\u0130nformationController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\Unit\u0130nformationController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\Unit\u0130nformationController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\Unit\u0130nformationController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T11:39:56.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\UsersController.cs",
               "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:58:39.253Z",
+              "WhenOpened": "2025-01-12T12:59:19.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAgwEQAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T11:16:32.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Views\\Shared\\AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Views\\Shared\\AdminLayout.cshtml",
-              "ViewState": "AgIAAEYBAAAAAAAAAAAgwL0BAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T18:10:17.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\wwwroot\\css\\style.css",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\wwwroot\\css\\style.css",
-              "ViewState": "AgIAALUmAAAAAAAAAAAUwNImAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-09T09:20:25.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T11:37:25.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RoleAssignmentRequest.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Model\\RoleModel\\RoleAssignmentRequest.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Model\\RoleModel\\RoleAssignmentRequest.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Model\\RoleModel\\RoleAssignmentRequest.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Model\\RoleModel\\RoleAssignmentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "\u00DCNY.Domain\\Entities\\Users.cs",
+              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.Domain\\Entities\\Users.cs",
+              "RelativeToolTip": "\u00DCNY.Domain\\Entities\\Users.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:07:39.881Z"
+              "WhenOpened": "2025-01-12T12:58:51.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAHIAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
+              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
+              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
+              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Views\\Users\\List.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T12:56:07.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAvwBAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:06:35.761Z",
+              "WhenOpened": "2025-01-12T09:32:15.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefaultClient.cs",
+              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
+              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
+              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
+              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAArwBUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T18:48:31.992Z",
               "EditorCaption": ""
             }
           ]

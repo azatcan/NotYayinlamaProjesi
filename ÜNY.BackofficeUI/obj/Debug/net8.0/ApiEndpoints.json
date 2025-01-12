@@ -127,18 +127,34 @@
         "Name": "ImagePath",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
-      },
-      {
-        "Name": "GenderList",
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem, Microsoft.AspNetCore.Mvc.ViewFeatures, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "UnitList",
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Microsoft.AspNetCore.Mvc.Rendering.SelectListItem, Microsoft.AspNetCore.Mvc.ViewFeatures, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.AdminPendingUserController",
+    "Method": "ApproveUser",
+    "RelativePath": "api/AdminPendingUser/Approveuser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.AdminAproveModel.AdminUserAproveViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.AdminPendingUserController",
+    "Method": "Pendingusers",
+    "RelativePath": "api/AdminPendingUser/Pendingusers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

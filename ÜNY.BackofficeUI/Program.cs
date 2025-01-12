@@ -10,6 +10,15 @@ namespace ÜNY.BackofficeUI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
             builder.Services.AddControllersWithViews();
             builder.Services.AddHttpClient();
             builder.Services.AddScoped<DefaultClient>();
