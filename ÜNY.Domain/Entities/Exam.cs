@@ -12,6 +12,6 @@ namespace ÜNY.Domain.Entities
         public string Name { get; set; }  
         public DateTime Date { get; set; }
         public Guid CourseId { get; set; }
-        public Courses Course { get; set; }
+        public virtual Courses Course { get; set; }
     }
 }

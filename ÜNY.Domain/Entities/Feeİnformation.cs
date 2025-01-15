@@ -19,7 +19,7 @@ namespace ÜNY.Domain.Entities
         public string Description { get; set; }
         public bool Status { get; set; }
         public Guid UserId { get; set; }
-        public Users User { get; set; }
+        public virtual Users User { get; set; }
 
 
     }

@@ -26,6 +26,21 @@ namespace ÜNY.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Contactİnformation",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Addrees = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Contactİnformation", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
                 {
@@ -118,6 +133,7 @@ namespace ÜNY.Domain.Migrations
                     GenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UnitİnformationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IsApproved = table.Column<bool>(type: "bit", nullable: false),
+                    ContactİnformationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -138,6 +154,11 @@ namespace ÜNY.Domain.Migrations
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_AspNetUsers_Contactİnformation_ContactİnformationId",
+                        column: x => x.ContactİnformationId,
+                        principalTable: "Contactİnformation",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_AspNetUsers_Gender_GenderId",
                         column: x => x.GenderId,
                         principalTable: "Gender",
@@ -146,7 +167,8 @@ namespace ÜNY.Domain.Migrations
                         name: "FK_AspNetUsers_Unitİnformation_UnitİnformationId",
                         column: x => x.UnitİnformationId,
                         principalTable: "Unitİnformation",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -247,26 +269,6 @@ namespace ÜNY.Domain.Migrations
                     table.PrimaryKey("PK_AspNetUserTokens", x => new { x.UserId, x.LoginProvider, x.Name });
                     table.ForeignKey(
                         name: "FK_AspNetUserTokens_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Contactİnformation",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Addrees = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Contactİnformation", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Contactİnformation_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
@@ -376,6 +378,13 @@ namespace ÜNY.Domain.Migrations
                 column: "NormalizedEmail");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_ContactİnformationId",
+                table: "AspNetUsers",
+                column: "ContactİnformationId",
+                unique: true,
+                filter: "[ContactİnformationId] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_GenderId",
                 table: "AspNetUsers",
                 column: "GenderId");
@@ -391,11 +400,6 @@ namespace ÜNY.Domain.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Contactİnformation_UserId",
-                table: "Contactİnformation",
-                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CoursesUnitInformation_UnitInformationId",
@@ -452,9 +456,6 @@ namespace ÜNY.Domain.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Contactİnformation");
-
-            migrationBuilder.DropTable(
                 name: "CoursesUnitInformation");
 
             migrationBuilder.DropTable(
@@ -477,6 +478,9 @@ namespace ÜNY.Domain.Migrations
 
             migrationBuilder.DropTable(
                 name: "Courses");
+
+            migrationBuilder.DropTable(
+                name: "Contactİnformation");
 
             migrationBuilder.DropTable(
                 name: "Gender");

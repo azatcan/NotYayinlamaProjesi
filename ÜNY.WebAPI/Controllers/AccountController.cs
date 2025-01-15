@@ -81,6 +81,7 @@ namespace ÜNY.WebAPI.Controllers
                 user.MotherName = model.MotherName;
                 user.GenderId = model.GenderId;
                 user.UnitİnformationId = model.UnitİnformationId;
+                user.ContactİnformationId = null;
                 user.IsApproved = false;
 
 

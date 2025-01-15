@@ -10,9 +10,8 @@ namespace ÜNY.Domain.Entities
     {
         public Guid Id { get; set; }
         public Guid CourseId { get; set; }
-        public Courses Course { get; set; }
-
+        public virtual Courses Course { get; set; }
         public Guid UnitInformationId { get; set; }
-        public Unitİnformation Unitİnformation { get; set; }
+        public virtual Unitİnformation Unitİnformation { get; set; }
     }
 }

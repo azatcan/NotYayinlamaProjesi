@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kttTTGROnt/H1NFG3q1b3Ib0m+4Bpo8hjfoX91/nD98=",
+  "Hash": "kbedxc4s0SRTs1Cep3+uHNzR+2qv9NXvhLnKDWWOgUY=",
   "Source": "ÜNY.WebAPI",
   "BasePath": "_content/ÜNY.WebAPI",
   "Mode": "Default",
@@ -36,6 +36,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resimler\\user\\01419dac-d1c9-42a4-b3c2-d02d8226ab89.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/15138ac0-e2a3-4d99-98da-e2fb7bed8bf7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ikpsd9ovoh",
+      "Integrity": "jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/39e2a3c8-d2c6-48a1-83bf-e435ee8893a7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ikpsd9ovoh",
+      "Integrity": "jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg"
     },
     {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\3dda0631-1114-4e64-8deb-dd320b3b7c73.jpg",
@@ -143,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\resimler\\user\\5a298adf-b0c0-4b10-a86e-d1a4f2dbef6b.jpg"
     },
     {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\613cadbd-df3e-46d7-9017-b9344d462e72.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/613cadbd-df3e-46d7-9017-b9344d462e72#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bfvfj2oee3",
+      "Integrity": "KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\613cadbd-df3e-46d7-9017-b9344d462e72.jpg"
+    },
+    {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\648ba916-6fe4-4895-8271-627f18b7432e.jpg",
       "SourceId": "ÜNY.WebAPI",
       "SourceType": "Discovered",
@@ -227,6 +290,27 @@
       "OriginalItemSpec": "wwwroot\\resimler\\user\\84f9bfac-f48c-4334-b7f6-dc61c4c5517a.jpg"
     },
     {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\85bfd4b4-973d-4527-8df5-253a897e14e4.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/85bfd4b4-973d-4527-8df5-253a897e14e4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bfvfj2oee3",
+      "Integrity": "KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\85bfd4b4-973d-4527-8df5-253a897e14e4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg",
       "SourceId": "ÜNY.WebAPI",
       "SourceType": "Discovered",
@@ -246,6 +330,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resimler\\user\\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/8e6cca4a-58e3-401f-9d40-3e9258438c7a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ikpsd9ovoh",
+      "Integrity": "jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/96a19d34-9fed-41fd-a2ca-db1c9640e013#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u5ge4cndum",
+      "Integrity": "Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg"
     },
     {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg",
@@ -290,6 +416,27 @@
       "OriginalItemSpec": "wwwroot\\resimler\\user\\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg"
     },
     {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/b4738a90-ec28-4414-ade6-2efcfbf8469a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u5ge4cndum",
+      "Integrity": "Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg"
+    },
+    {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg",
       "SourceId": "ÜNY.WebAPI",
       "SourceType": "Discovered",
@@ -311,6 +458,27 @@
       "OriginalItemSpec": "wwwroot\\resimler\\user\\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg"
     },
     {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/c2ef35d6-747b-424d-a479-2e00f33fdb80#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bfvfj2oee3",
+      "Integrity": "KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg"
+    },
+    {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg",
       "SourceId": "ÜNY.WebAPI",
       "SourceType": "Discovered",
@@ -330,6 +498,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resimler\\user\\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\d81f982c-cb47-4144-a00e-3562b14ccce0.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/d81f982c-cb47-4144-a00e-3562b14ccce0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u5ge4cndum",
+      "Integrity": "Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\d81f982c-cb47-4144-a00e-3562b14ccce0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\df5d66d2-7b13-4387-b505-84d44e800c2e.jpg",
+      "SourceId": "ÜNY.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\",
+      "BasePath": "_content/ÜNY.WebAPI",
+      "RelativePath": "resimler/user/df5d66d2-7b13-4387-b505-84d44e800c2e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u5ge4cndum",
+      "Integrity": "Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resimler\\user\\df5d66d2-7b13-4387-b505-84d44e800c2e.jpg"
     },
     {
       "Identity": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg",
@@ -433,6 +643,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.ikpsd9ovoh.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 10:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpsd9ovoh"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\15138ac0-e2a3-4d99-98da-e2fb7bed8bf7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 10:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.ikpsd9ovoh.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 11:29:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpsd9ovoh"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\39e2a3c8-d2c6-48a1-83bf-e435ee8893a7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 11:29:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
         }
       ]
     },
@@ -847,6 +1221,88 @@
       ]
     },
     {
+      "Route": "resimler/user/613cadbd-df3e-46d7-9017-b9344d462e72.bfvfj2oee3.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\613cadbd-df3e-46d7-9017-b9344d462e72.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:40:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bfvfj2oee3"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/613cadbd-df3e-46d7-9017-b9344d462e72.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/613cadbd-df3e-46d7-9017-b9344d462e72.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\613cadbd-df3e-46d7-9017-b9344d462e72.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:40:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
       "Route": "resimler/user/648ba916-6fe4-4895-8271-627f18b7432e.jpg",
       "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\648ba916-6fe4-4895-8271-627f18b7432e.jpg",
       "Selectors": [],
@@ -1175,6 +1631,88 @@
       ]
     },
     {
+      "Route": "resimler/user/85bfd4b4-973d-4527-8df5-253a897e14e4.bfvfj2oee3.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\85bfd4b4-973d-4527-8df5-253a897e14e4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:32:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bfvfj2oee3"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/85bfd4b4-973d-4527-8df5-253a897e14e4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/85bfd4b4-973d-4527-8df5-253a897e14e4.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\85bfd4b4-973d-4527-8df5-253a897e14e4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:32:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
       "Route": "resimler/user/8bc6becc-6f4d-4baf-9440-8514211b0fe3.ikpsd9ovoh.jpg",
       "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8bc6becc-6f4d-4baf-9440-8514211b0fe3.jpg",
       "Selectors": [],
@@ -1253,6 +1791,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/8e6cca4a-58e3-401f-9d40-3e9258438c7a.ikpsd9ovoh.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:43:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpsd9ovoh"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:43:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl7f0hDG06reO1W5vgslfITX1kDu1MF3+qC9hq0qi9U="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/96a19d34-9fed-41fd-a2ca-db1c9640e013.u5ge4cndum.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u5ge4cndum"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
         }
       ]
     },
@@ -1421,6 +2123,88 @@
       ]
     },
     {
+      "Route": "resimler/user/b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:29:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/b4738a90-ec28-4414-ade6-2efcfbf8469a.u5ge4cndum.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:29:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u5ge4cndum"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
       "Route": "resimler/user/c099ef84-c675-4d71-a207-1dd44d4d08ad.bfvfj2oee3.jpg",
       "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg",
       "Selectors": [],
@@ -1489,6 +2273,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Sat, 11 Jan 2025 15:58:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/c2ef35d6-747b-424d-a479-2e00f33fdb80.bfvfj2oee3.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:51:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bfvfj2oee3"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:51:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1581,6 +2447,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-KXj9NY+dDwyf9KI1sAYm2LYSKQ+PvKxSHNwVWh2PwIE="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/d81f982c-cb47-4144-a00e-3562b14ccce0.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\d81f982c-cb47-4144-a00e-3562b14ccce0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:38:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/d81f982c-cb47-4144-a00e-3562b14ccce0.u5ge4cndum.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\d81f982c-cb47-4144-a00e-3562b14ccce0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:38:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u5ge4cndum"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/d81f982c-cb47-4144-a00e-3562b14ccce0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/df5d66d2-7b13-4387-b505-84d44e800c2e.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\df5d66d2-7b13-4387-b505-84d44e800c2e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:27:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
+        }
+      ]
+    },
+    {
+      "Route": "resimler/user/df5d66d2-7b13-4387-b505-84d44e800c2e.u5ge4cndum.jpg",
+      "AssetFile": "C:\\Users\\azatc\\source\\repos\\ÜniNotYayınlama\\ÜNY.WebAPI\\wwwroot\\resimler\\user\\df5d66d2-7b13-4387-b505-84d44e800c2e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1678172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:27:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u5ge4cndum"
+        },
+        {
+          "Name": "label",
+          "Value": "resimler/user/df5d66d2-7b13-4387-b505-84d44e800c2e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ui3K0sTnQNE/Mt2WFxsG09x3vEPzqBQVatmDTBAw7Og="
         }
       ]
     },

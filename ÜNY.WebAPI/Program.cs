@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
+using System.Configuration;
 using ÜNY.Domain.Abstract;
 using ÜNY.Domain.Concrete;
 using ÜNY.Domain.Data;
@@ -27,7 +28,7 @@ namespace ÜNY.WebAPI
                 });
             });
             builder.Services.AddControllers();
-            builder.Services.AddDbContext<DataContext>(conf => conf.UseSqlServer(builder.Configuration.GetConnectionString("DefalutConnection")));
+            builder.Services.AddDbContext<DataContext>(conf => conf.UseSqlServer(builder.Configuration.GetConnectionString("DefalutConnection")).UseLazyLoadingProxies());
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -44,6 +45,7 @@ namespace ÜNY.WebAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseStaticFiles();
             //app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

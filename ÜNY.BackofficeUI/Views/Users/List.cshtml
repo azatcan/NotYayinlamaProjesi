@@ -1,4 +1,4 @@
-﻿@model ÜNY.Domain.Entities.Users
+﻿@model ÜNY.WebAPI.DTOs.UserDTO
 @{
     ViewData["Title"] = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -22,8 +22,7 @@
                     <div class="me-7 mb-4">
                         <div class="position-relative">
                             <img style="max-width: 200px;" alt="Profil Resmi"
-                                 
-                                  value="@Model.ImagePath" class="img-fluid rounded">
+                                 src="@Url.Content("~/resimler/user/" + Model.ImagePath)" class="img-fluid rounded">
                                  
                         </div>
                     </div>
@@ -40,7 +39,6 @@
                                             <label class="col-lg-3 col-form-label text-end">Ad Soyad</label>
                                             <div class="col-lg-9">
                                                 <input name="adSoyad" value="@Model.Name  @Model.SurName" class="form-control form-control-lg form-control-solid">
-                                                @Model.Name
                                             </div>
                                         </div>
 
@@ -64,7 +62,7 @@
                                         <div class="form-group row mb-3">
                                             <label class="col-lg-3 col-form-label text-end">Program</label>
                                             <div class="col-lg-9">
-                                                <input name="programAdi" value="@Model.Unitİnformation.UnitName" disabled class="form-control form-control-lg form-control-solid">
+                                                <input name="programAdi" value="@Model.UnitName" disabled class="form-control form-control-lg form-control-solid">
                                             </div>
                                         </div>
                                     </div>
@@ -111,7 +109,7 @@
                                         <div class="form-group row mb-3">
                                             <label class="col-lg-3 col-form-label text-end">Cinsiyet</label>
                                             <div class="col-lg-9">
-                                                <input name="cinsiyet" value="@Model.GenderId" disabled class="form-control form-control-lg form-control-solid">
+                                                <input name="cinsiyet" value="@Model.Gender" disabled class="form-control form-control-lg form-control-solid">
                                             </div>
                                         </div>
                                     </div>

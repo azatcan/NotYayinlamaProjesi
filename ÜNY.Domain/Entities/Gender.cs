@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ÜNY.Domain.Entities
@@ -10,6 +11,7 @@ namespace ÜNY.Domain.Entities
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Users> Users { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Users> Users { get; set; }
     }
 }

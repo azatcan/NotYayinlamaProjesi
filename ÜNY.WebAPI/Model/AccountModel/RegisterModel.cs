@@ -14,6 +14,7 @@ namespace ÜNY.WebAPI.Model.AccountModel
         public string FatherName { get; set; }
         public Guid GenderId { get; set; }
         public Guid UnitİnformationId { get; set; }
+        public Guid? ContactİnformationId { get; set; }
         public string Password { get; set; }
         public string RePassword { get; set; }
         public IFormFile ImagePath { get; set; }

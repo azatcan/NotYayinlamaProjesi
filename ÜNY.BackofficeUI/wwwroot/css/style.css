@@ -676,7 +676,7 @@ ul.sidebar-menu li a span{
 
 ul.sidebar-menu li a{
 
-    color: #d0d8df;
+    
 
     text-decoration: none;
 
@@ -9917,7 +9917,6 @@ span.customSelect.changed {
         text-decoration: none;
         display: block;
         padding: 10px 15px;
-        background-color: #f4f4f4;
         color: #333;
         border-radius: 4px;
     }

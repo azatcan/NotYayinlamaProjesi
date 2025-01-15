@@ -77,6 +77,7 @@ namespace ÜNY.BackofficeUI.Handlers
                 formData.Add(new StringContent(model.FatherName), "FatherName");
                 formData.Add(new StringContent(model.GenderId.ToString()), "GenderId");
                 formData.Add(new StringContent(model.UnitİnformationId.ToString()), "UnitİnformationId");
+                formData.Add(new StringContent(model.ContactİnformationId.ToString()), "ContactİnformationId");
 
                 if (model.ImagePath != null)
                 {

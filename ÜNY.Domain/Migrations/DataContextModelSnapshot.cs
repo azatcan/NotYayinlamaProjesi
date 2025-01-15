@@ -18,6 +18,9 @@ namespace ÜNY.Domain.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -147,8 +150,6 @@ namespace ÜNY.Domain.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Contactİnformation");
                 });
@@ -371,6 +372,9 @@ namespace ÜNY.Domain.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("ContactİnformationId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime?>("DateofBirth")
                         .HasColumnType("datetime2");
 
@@ -455,6 +459,10 @@ namespace ÜNY.Domain.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ContactİnformationId")
+                        .IsUnique()
+                        .HasFilter("[ContactİnformationId] IS NOT NULL");
+
                     b.HasIndex("GenderId");
 
                     b.HasIndex("NormalizedEmail")
@@ -519,17 +527,6 @@ namespace ÜNY.Domain.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("ÜNY.Domain.Entities.Contactİnformation", b =>
-                {
-                    b.HasOne("ÜNY.Domain.Entities.Users", "User")
-                        .WithMany("Contactİnformation")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ÜNY.Domain.Entities.CourseUnitInformation", b =>
@@ -613,6 +610,10 @@ namespace ÜNY.Domain.Migrations
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
                 {
+                    b.HasOne("ÜNY.Domain.Entities.Contactİnformation", "Contactİnformation")
+                        .WithOne("User")
+                        .HasForeignKey("ÜNY.Domain.Entities.Users", "ContactİnformationId");
+
                     b.HasOne("ÜNY.Domain.Entities.Gender", "Gender")
                         .WithMany("Users")
                         .HasForeignKey("GenderId")
@@ -622,12 +623,20 @@ namespace ÜNY.Domain.Migrations
                     b.HasOne("ÜNY.Domain.Entities.Unitİnformation", "Unitİnformation")
                         .WithMany("Users")
                         .HasForeignKey("UnitİnformationId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Contactİnformation");
 
                     b.Navigation("Gender");
 
                     b.Navigation("Unitİnformation");
+                });
+
+            modelBuilder.Entity("ÜNY.Domain.Entities.Contactİnformation", b =>
+                {
+                    b.Navigation("User")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Courses", b =>
@@ -651,8 +660,6 @@ namespace ÜNY.Domain.Migrations
 
             modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
                 {
-                    b.Navigation("Contactİnformation");
-
                     b.Navigation("Enrollments");
 
                     b.Navigation("Feeİnformation");

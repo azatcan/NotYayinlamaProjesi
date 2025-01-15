@@ -114,6 +114,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Contact\u0130nformationId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "Password",
         "Type": "System.String",
         "IsRequired": false
@@ -200,6 +205,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.Contact\u0130nformationController",
+    "Method": "Update",
+    "RelativePath": "api/Contact\u0130nformation/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.ContactModel.ContactViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "\u00DCNY.WebAPI.Controllers.CoursesController",
     "Method": "Add",
     "RelativePath": "api/Courses/add",
@@ -239,6 +260,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.CoursesUnit\u0130nformationController",
+    "Method": "CoursesUnitInformationAdd",
+    "RelativePath": "api/CoursesUnit\u0130nformation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.CoursesUnitInformationModel.CoursesUnitInformationviewModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

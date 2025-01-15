@@ -18,12 +18,25 @@
         {
             public const string List = "/api/Users/list";
             
+            
+        }
+
+        public struct Contact
+        {
+            public const string ContactAdd = "/api/Contactİnformation/add";
+            public const string ContactUpdate = "/api/Contactİnformation/update";
+
         }
 
         public struct AdminAprove
         {
             public const string list = "api/AdminPendingUser/Pendingusers";
             public const string aprove = "api/AdminPendingUser/Approveuser";
+        }
+
+        public struct AdminCoursesUnit
+        {
+            public const string add = "api/CoursesUnitİnformation/add";
         }
     }
 }

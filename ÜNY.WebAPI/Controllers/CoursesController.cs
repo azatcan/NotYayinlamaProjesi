@@ -34,7 +34,7 @@ namespace ÜNY.WebAPI.Controllers
         {
             Courses courses = new Courses()
             {
-                CourseName = model.CourseName,
+                CourseName = model.CourseName,                
             };
             _coursesService.Add(courses);
             return Ok();

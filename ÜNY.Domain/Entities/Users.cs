@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ÜNY.Domain.Entities
@@ -19,13 +20,16 @@ namespace ÜNY.Domain.Entities
         public string Password { get; set; }
         public string RePassword { get; set; }
         public Guid GenderId { get; set; }
-        public Gender Gender { get; set; }
+        public virtual Gender Gender { get; set; }
         public Guid UnitİnformationId { get; set; }
         public bool IsApproved { get; set; }
-        public Unitİnformation Unitİnformation { get; set; }
-        public ICollection<Enrollment> Enrollments { get; set; }
-        public ICollection<Contactİnformation> Contactİnformation { get; set; }
-        public ICollection<Feeİnformation> Feeİnformation { get; set; }
+        public virtual Unitİnformation Unitİnformation { get; set; }
+        public Guid? ContactİnformationId { get; set; }
+        public virtual Contactİnformation? Contactİnformation { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Feeİnformation> Feeİnformation { get; set; }
 
         public string ImagePath { get; set; }     
     }

@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using ÜNY.Domain.Data;
 using ÜNY.Domain.Entities;
+using ÜNY.WebAPI.DTOs;
 using ÜNY.WebAPI.Model.UsersModel;
 
 namespace ÜNY.WebAPI.Controllers
@@ -26,16 +27,39 @@ namespace ÜNY.WebAPI.Controllers
         [Route("list")]
         public async Task<IActionResult> List()
         {
-            
             var currentUser = await _userManager.GetUserAsync(User);
-            if (currentUser == null) 
+            if (currentUser == null)
             {
                 return NotFound();
             }
-            //await _context.Users
-            //.Include(u => u.Unitİnformation)  
-            //.FirstOrDefaultAsync(u => u.Id == currentUser.Id);
-            return Ok(currentUser);
+            var userWithDetails = await _context.Users
+            .Where(u => u.Id == currentUser.Id)
+            .Select(u => new UserDTO
+            {
+                BirthPlace = u.BirthPlace,
+                ImagePath = u.ImagePath,
+                DateofBirth = u.DateofBirth,
+                FatherName = u.FatherName,
+                Gender = u.Gender.Name,
+                IdNumber = u.IdNumber,
+                MotherName = u.MotherName,
+                Id = u.Id,
+                Name = u.Name,
+                SurName = u.SurName,
+                UnitName = u.Unitİnformation.UnitName,
+                FacultyName = u.Unitİnformation.FacultyName,
+                Email = u.Contactİnformation.Email,
+                Phone = u.Contactİnformation.Phone,
+                Addrees = u.Contactİnformation.Addrees,
+            })
+                .FirstOrDefaultAsync();
+
+            if (userWithDetails == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(userWithDetails);
         }
     }
 }

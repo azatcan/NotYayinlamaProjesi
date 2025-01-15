@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -31,7 +32,8 @@ namespace ÜNY.Domain.Data
             modelBuilder.Entity<Users>()
                 .HasOne(u => u.Unitİnformation)
                 .WithMany(ui => ui.Users)
-                .HasForeignKey(u => u.UnitİnformationId);
+                .HasForeignKey(u => u.UnitİnformationId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<CourseUnitInformation>()
                 .HasKey(cui => new { cui.CourseId, cui.UnitInformationId });
@@ -56,10 +58,10 @@ namespace ÜNY.Domain.Data
                 .WithMany(c => c.Enrollments)
                 .HasForeignKey(e => e.CourseId);
 
-            modelBuilder.Entity<Contactİnformation>()
-                .HasOne(ci => ci.User)
-                .WithMany(u => u.Contactİnformation)
-                .HasForeignKey(ci => ci.UserId);
+            modelBuilder.Entity<Users>()
+                .HasOne(u => u.Contactİnformation)
+                .WithOne(ci => ci.User)
+                .HasForeignKey<Users>(u => u.ContactİnformationId);
 
             modelBuilder.Entity<Feeİnformation>()
                 .HasOne(fi => fi.User)
