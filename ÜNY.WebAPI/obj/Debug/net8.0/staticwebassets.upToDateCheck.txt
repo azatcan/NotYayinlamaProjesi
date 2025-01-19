@@ -17,10 +17,12 @@ wwwroot\resimler\user\8e6cca4a-58e3-401f-9d40-3e9258438c7a.jpg
 wwwroot\resimler\user\96a19d34-9fed-41fd-a2ca-db1c9640e013.jpg
 wwwroot\resimler\user\a208b5c1-ec68-498a-8875-3dedeac00cdf.jpg
 wwwroot\resimler\user\a5cd2f0e-dbb3-45c7-af6f-ae5992fb4ae8.jpg
+wwwroot\resimler\user\a854fdef-f696-42d8-88e6-c0ecf20b8c28.jpg
 wwwroot\resimler\user\b4738a90-ec28-4414-ade6-2efcfbf8469a.jpg
 wwwroot\resimler\user\c099ef84-c675-4d71-a207-1dd44d4d08ad.jpg
 wwwroot\resimler\user\c2ef35d6-747b-424d-a479-2e00f33fdb80.jpg
 wwwroot\resimler\user\c6ec64c9-3719-4cba-b287-f6d5483a788b.jpg
+wwwroot\resimler\user\d78e58c1-88bd-4c3e-af31-cbad623d9a7f.jpg
 wwwroot\resimler\user\d81f982c-cb47-4144-a00e-3562b14ccce0.jpg
 wwwroot\resimler\user\df5d66d2-7b13-4387-b505-84d44e800c2e.jpg
 wwwroot\resimler\user\f43e1375-a4f5-454b-b6a8-f58835b2dcc3.jpg

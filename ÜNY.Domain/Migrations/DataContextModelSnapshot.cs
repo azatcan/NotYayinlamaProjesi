@@ -196,6 +196,9 @@ namespace ÜNY.Domain.Migrations
                     b.Property<Guid>("CourseId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
@@ -288,8 +291,6 @@ namespace ÜNY.Domain.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Feeİnformation");
                 });
@@ -388,6 +389,9 @@ namespace ÜNY.Domain.Migrations
                     b.Property<string>("FatherName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("FeeİnformationId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("GenderId")
                         .HasColumnType("uniqueidentifier");
 
@@ -462,6 +466,10 @@ namespace ÜNY.Domain.Migrations
                     b.HasIndex("ContactİnformationId")
                         .IsUnique()
                         .HasFilter("[ContactİnformationId] IS NOT NULL");
+
+                    b.HasIndex("FeeİnformationId")
+                        .IsUnique()
+                        .HasFilter("[FeeİnformationId] IS NOT NULL");
 
                     b.HasIndex("GenderId");
 
@@ -597,22 +605,15 @@ namespace ÜNY.Domain.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ÜNY.Domain.Entities.Feeİnformation", b =>
-                {
-                    b.HasOne("ÜNY.Domain.Entities.Users", "User")
-                        .WithMany("Feeİnformation")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
                 {
                     b.HasOne("ÜNY.Domain.Entities.Contactİnformation", "Contactİnformation")
                         .WithOne("User")
                         .HasForeignKey("ÜNY.Domain.Entities.Users", "ContactİnformationId");
+
+                    b.HasOne("ÜNY.Domain.Entities.Feeİnformation", "Feeİnformation")
+                        .WithOne("User")
+                        .HasForeignKey("ÜNY.Domain.Entities.Users", "FeeİnformationId");
 
                     b.HasOne("ÜNY.Domain.Entities.Gender", "Gender")
                         .WithMany("Users")
@@ -627,6 +628,8 @@ namespace ÜNY.Domain.Migrations
                         .IsRequired();
 
                     b.Navigation("Contactİnformation");
+
+                    b.Navigation("Feeİnformation");
 
                     b.Navigation("Gender");
 
@@ -646,6 +649,12 @@ namespace ÜNY.Domain.Migrations
                     b.Navigation("Enrollments");
                 });
 
+            modelBuilder.Entity("ÜNY.Domain.Entities.Feeİnformation", b =>
+                {
+                    b.Navigation("User")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("ÜNY.Domain.Entities.Gender", b =>
                 {
                     b.Navigation("Users");
@@ -661,8 +670,6 @@ namespace ÜNY.Domain.Migrations
             modelBuilder.Entity("ÜNY.Domain.Entities.Users", b =>
                 {
                     b.Navigation("Enrollments");
-
-                    b.Navigation("Feeİnformation");
                 });
 #pragma warning restore 612, 618
         }

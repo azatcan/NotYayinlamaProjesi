@@ -28,9 +28,11 @@ namespace ÜNY.Domain.Entities
         public virtual Contactİnformation? Contactİnformation { get; set; }
         [JsonIgnore]
         public virtual ICollection<Enrollment> Enrollments { get; set; }
-        [JsonIgnore]
-        public virtual ICollection<Feeİnformation> Feeİnformation { get; set; }
+        //[JsonIgnore]
+        //public virtual ICollection<Feeİnformation> Feeİnformation { get; set; }
 
+        public Guid? FeeİnformationId { get; set; }
+        public virtual Feeİnformation? Feeİnformation { get; set; }
         public string ImagePath { get; set; }     
     }
 }

@@ -17,8 +17,10 @@
         public struct Users
         {
             public const string List = "/api/Users/list";
-            
-            
+
+            public const string GetAllUsers = "/api/Users/GetAllUsers";
+
+
         }
 
         public struct Contact
@@ -37,6 +39,39 @@
         public struct AdminCoursesUnit
         {
             public const string add = "api/CoursesUnitİnformation/add";
+        }
+
+        public struct Enrolment
+        {
+            public const string list = "api/CoursesUnitİnformation/GetUserUnitCourses";
+
+            public const string add = "api/Enrolment/EnrollCourses";
+        }
+
+        public struct AdminAproveEnrolments 
+        {
+            public const string GetPendingEnrollments = "api/AdminEnrollAprove/GetPendingEnrollments";
+            public const string aprove = "api/AdminEnrollAprove/ApproveEnrollment";
+        }
+
+        public struct AdminFeeİnfo
+        {
+            public const string FeeİnfoCreate = "/api/AdminFeeİnformation/CreateFee";
+        }
+
+        public struct Feeİnfo
+        {
+            public const string FeeİnfoList = "/api/Feeİnformation/Get";
+        }
+
+        public struct AdminExam
+        {
+            public const string add = "/api/AdminExam/add";
+        }
+
+        public struct Courses
+        {
+            public const string GetAllCourses = "api/Courses/list";
         }
     }
 }

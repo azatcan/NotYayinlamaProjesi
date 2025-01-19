@@ -1,0 +1,80 @@
+﻿@using ÜNY.Domain.Entities
+@model ÜNY.WebAPI.Model.FeeİnfoModel.FeeİnfoViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Fee Information Creation</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            <p>@TempData["ErrorMessage"]</p>
+        </div>
+    }
+    else if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            <p>@TempData["SuccessMessage"]</p>
+        </div>
+    }
+
+    <form method="post">
+        <div class="mb-3">
+            <label for="UserId" class="form-label">Select User</label>
+            <select id="UserId" name="UserId" class="form-select">
+                <option value="">Select a User</option>
+                @if (ViewData["Users"] != null && ViewData["Users"] is List<Users> usersList && usersList.Any())
+                {
+                    foreach (var user in usersList)
+                    {
+                        <option value="@user.Id">@user.UserName</option>
+                    }
+                }
+                else
+                {
+                    <p>No users available.</p>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="YourReferenceNumber" class="form-label">Your Reference Number</label>
+            <input type="text" class="form-control" id="YourReferenceNumber" name="YourReferenceNumber" value="@Model.YourReferenceNumber" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="YourCurrentDebt" class="form-label">Current Debt</label>
+            <input type="number" class="form-control" id="YourCurrentDebt" name="YourCurrentDebt" value="@Model.YourCurrentDebt" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="period" class="form-label">Period</label>
+            <input type="text" class="form-control" id="period" name="period" value="@Model.period" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="DebtType" class="form-label">Debt Type</label>
+            <input type="text" class="form-control" id="DebtType" name="DebtType" value="@Model.DebtType" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Amount" class="form-label">Amount</label>
+            <input type="number" class="form-control" id="Amount" name="Amount" value="@Model.Amount" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Description" class="form-label">Description</label>
+            <textarea class="form-control" id="Description" name="Description" rows="3">@Model.Description</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create Fee Information</button>
+    </form>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+

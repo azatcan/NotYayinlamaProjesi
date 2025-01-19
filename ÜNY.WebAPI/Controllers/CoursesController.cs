@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ÜNY.Domain.Data;
 using ÜNY.Domain.Entities;
 using ÜNY.Infrastructure.Abstract;
@@ -22,9 +22,9 @@ namespace ÜNY.WebAPI.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult List() 
+        public async Task<IActionResult> List() 
         {
-            var courses = _coursesService.List();
+            var courses = await _dataContext.Courses.ToListAsync();
             return Ok(courses);
         }
 

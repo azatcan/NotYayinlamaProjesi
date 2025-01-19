@@ -1,0 +1,50 @@
+﻿@model ÜNY.WebAPI.Model.EnrolmentModel.EnrollCoursesViewModel
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>@Model.UnitName</h3>
+
+    @if (Model.AvailableCourses != null && Model.AvailableCourses.Any())
+    {
+        <form action="/Enrolment/EnrollCourses" method="post">
+            @Html.AntiForgeryToken()
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Course Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var course in Model.AvailableCourses)
+                    {
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="courseIds" value="@course.Id" />
+                            </td>
+                            <td>@course.CourseName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Enroll Selected Courses</button>
+        </form>
+    }
+    else
+    {
+        <p>No courses available.</p>
+    }
+</div>
+
+<!-- Success/Error Message -->
+@if (TempData["ResultMessage"] != null)
+{
+    <div class="alert alert-success mt-3">@TempData["ResultMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger mt-3">@TempData["ErrorMessage"]</div>
+}

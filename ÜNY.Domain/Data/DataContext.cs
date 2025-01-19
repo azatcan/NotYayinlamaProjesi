@@ -63,10 +63,10 @@ namespace ÜNY.Domain.Data
                 .WithOne(ci => ci.User)
                 .HasForeignKey<Users>(u => u.ContactİnformationId);
 
-            modelBuilder.Entity<Feeİnformation>()
-                .HasOne(fi => fi.User)
-                .WithMany(u => u.Feeİnformation)
-                .HasForeignKey(fi => fi.UserId);
+            modelBuilder.Entity<Users>()
+              .HasOne(u => u.Feeİnformation)
+              .WithOne(ci => ci.User)
+              .HasForeignKey<Users>(u => u.FeeİnformationId);
 
             base.OnModelCreating(modelBuilder);
         }

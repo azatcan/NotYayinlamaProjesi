@@ -96,15 +96,6 @@ namespace ÜNY.WebAPI.Controllers
                 return NotFound(new { message = "Kullanıcı bulunamadı" });
             }
 
-            //if (!await _roleManager.RoleExistsAsync(request.Role))
-            //{
-            //    var roleResult = await _roleManager.CreateAsync(new IdentityRole(request.Role));
-            //    if (!roleResult.Succeeded)
-            //    {
-            //        return BadRequest(new { message = "Rol oluşturulamadı", errors = roleResult.Errors });
-            //    }
-            //}
-
             var result = await _userManager.AddToRoleAsync(user, request.Role);
             if (result.Succeeded)
             {

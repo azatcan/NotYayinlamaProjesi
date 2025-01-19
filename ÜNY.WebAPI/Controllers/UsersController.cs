@@ -61,5 +61,13 @@ namespace ÜNY.WebAPI.Controllers
 
             return Ok(userWithDetails);
         }
+
+        [HttpGet]
+        [Route("GetAllUsers")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _context.Users.ToListAsync();
+            return Ok(users); 
+        }
     }
 }
