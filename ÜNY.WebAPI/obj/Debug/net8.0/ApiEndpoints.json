@@ -179,6 +179,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.AdminExamGradeController",
+    "Method": "AddGarde",
+    "RelativePath": "api/AdminExamGrade/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "\u00DCNY.WebAPI.Model.AdminExamGrade.AdminExamGradeViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "\u00DCNY.WebAPI.Controllers.AdminFee\u0130nformationController",
     "Method": "CreateFee",
     "RelativePath": "api/AdminFee\u0130nformation/CreateFee",
@@ -360,6 +376,36 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.ExamController",
+    "Method": "GetExam",
+    "RelativePath": "api/Exam/GetExamlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.ExamController",
+    "Method": "GetExams",
+    "RelativePath": "api/Exam/GetExams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.ExamGradeController",
+    "Method": "Get",
+    "RelativePath": "api/ExamGrade/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -564,6 +610,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "\u00DCNY.WebAPI.Controllers.UsersController",
+    "Method": "GetEnrolledStudents",
+    "RelativePath": "api/Users/GetEnrolledStudents/{examId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

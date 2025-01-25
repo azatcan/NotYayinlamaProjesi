@@ -69,5 +69,20 @@ namespace ÜNY.WebAPI.Controllers
             var users = await _context.Users.ToListAsync();
             return Ok(users); 
         }
+
+
+        [HttpGet("GetEnrolledStudents/{examId}")]
+        public async Task<IActionResult> GetEnrolledStudents(Guid examId)
+        {
+            var students = await _context.Enrollment
+                .Where(en => en.Course.Exams.Any(ex => ex.Id == examId) && en.Status)
+                .Select(en => new
+                {
+                    en.UserId,
+                    en.Users.Name 
+                }).ToListAsync();
+
+            return Ok(students);
+        }
     }
 }

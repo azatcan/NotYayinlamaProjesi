@@ -1,0 +1,40 @@
+﻿@using ÜNY.WebAPI.Model.UsersModel
+@model List<StudentViewModel>
+
+@{
+    ViewData["Title"] = "ManageGrades";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    Guid examId = (Guid)ViewBag.ExamId;
+}
+
+
+
+<h2>Not Girişi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Öğrenci Adı</th>
+            <th>Not</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>
+                    <form method="post" action="@Url.Action("AddGrade", "AdminExamGrade"/* , new { area = "Admin" } */)">
+                        <input type="hidden" name="ExamId" value="@examId" />
+                        <input type="hidden" name="UserId" value="@student.UserId" />
+                        <input type="number" name="Grade" class="form-control" min="0" max="100" required />
+                        <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

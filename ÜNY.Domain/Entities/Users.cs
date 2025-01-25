@@ -23,8 +23,10 @@ namespace ÜNY.Domain.Entities
         public virtual Gender Gender { get; set; }
         public Guid UnitİnformationId { get; set; }
         public bool IsApproved { get; set; }
+        [JsonIgnore]
         public virtual Unitİnformation Unitİnformation { get; set; }
         public Guid? ContactİnformationId { get; set; }
+        [JsonIgnore]
         public virtual Contactİnformation? Contactİnformation { get; set; }
         [JsonIgnore]
         public virtual ICollection<Enrollment> Enrollments { get; set; }
@@ -32,6 +34,7 @@ namespace ÜNY.Domain.Entities
         //public virtual ICollection<Feeİnformation> Feeİnformation { get; set; }
 
         public Guid? FeeİnformationId { get; set; }
+        [JsonIgnore]
         public virtual Feeİnformation? Feeİnformation { get; set; }
         public string ImagePath { get; set; }     
     }

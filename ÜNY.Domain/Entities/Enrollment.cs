@@ -13,6 +13,6 @@ namespace ÜNY.Domain.Entities
         public virtual Users Users { get; set; }
         public Guid CourseId { get; set; }
         public virtual Courses Course { get; set; }
-        public bool Status {  get; set; } 
+        public bool Status {  get; set; }
     }
 }

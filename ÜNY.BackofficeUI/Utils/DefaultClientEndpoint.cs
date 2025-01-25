@@ -20,6 +20,8 @@
 
             public const string GetAllUsers = "/api/Users/GetAllUsers";
 
+            public const string BaseGetStudentsForCourse = "/api/Users/GetEnrolledStudents";
+
 
         }
 
@@ -72,6 +74,26 @@
         public struct Courses
         {
             public const string GetAllCourses = "api/Courses/list";
+            public const string GetCourses = "api/Courses/GetCourses";
         }
+
+        public struct Exam
+        {
+            public const string Get = "api/Exam/GetExamlist";
+
+            public const string GetExams = "api/Exam/GetExams";
+
+        }
+
+        public struct ExamGrade 
+        {
+            public const string Get = "api/ExamGrade/Get";
+        }
+
+        public struct AdminExamGrade
+        {
+            public const string Add = "api/AdminExamGrade/Add";
+        }
+
     }
 }

@@ -24,15 +24,6 @@ namespace ÜNY.BackofficeUI.Controllers
         {
             try
             {
-                //var currentDate = DateTime.UtcNow;
-                //var startDate = new DateTime(currentDate.Year, 9, 1); 
-                //var endDate = new DateTime(currentDate.Year, 10, 31); 
-
-                //if (currentDate < startDate || currentDate > endDate)
-                //{
-                //    ViewBag.ErrorMessage = "Ders kaydı sadece Eylül ve Ekim aylarında yapılabilir.";
-                //    return View(new List<EnrollCoursesViewModel>());
-                //}
 
                 var response = await _client.GetAsync<EnrollCoursesViewModel>(DefaultClientEndpoint.Enrolment.list);
 
@@ -83,11 +74,6 @@ namespace ÜNY.BackofficeUI.Controllers
             return RedirectToAction("Add");
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Add()
-        //{
-        //    return View();
-        //}
 
     }
 }

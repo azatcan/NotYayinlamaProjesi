@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ÜNY.Domain.Data;
 using ÜNY.Domain.Entities;
 using ÜNY.Infrastructure.Abstract;
+using ÜNY.WebAPI.DTOs;
 using ÜNY.WebAPI.Model.CoursesModel;
 
 namespace ÜNY.WebAPI.Controllers
@@ -27,6 +28,8 @@ namespace ÜNY.WebAPI.Controllers
             var courses = await _dataContext.Courses.ToListAsync();
             return Ok(courses);
         }
+
+      
 
         [HttpPost]
         [Route("add")]

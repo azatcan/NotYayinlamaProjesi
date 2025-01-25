@@ -13,6 +13,6 @@ namespace ÜNY.Domain.Entities
         public virtual Exam Exam { get; set; }
         public Guid UserId { get; set; }
         public virtual Users User { get; set; }
-        public decimal Grade { get; set; }
+        public decimal? Grade { get; set; }
     }
 }

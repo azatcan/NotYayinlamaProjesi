@@ -13,5 +13,6 @@ namespace ÜNY.Domain.Entities
         public DateTime Date { get; set; }
         public Guid CourseId { get; set; }
         public virtual Courses Course { get; set; }
+        public virtual ICollection<ExamGrade> ExamGrades { get; set; }
     }
 }

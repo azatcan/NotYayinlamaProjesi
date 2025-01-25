@@ -15,5 +15,7 @@ namespace ÜNY.Domain.Entities
         public virtual ICollection<Enrollment> Enrollments { get; set; }
         [JsonIgnore]
         public virtual ICollection<CourseUnitInformation> CourseUnitInformations { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Exam> Exams { get; set; }
     }
 }
