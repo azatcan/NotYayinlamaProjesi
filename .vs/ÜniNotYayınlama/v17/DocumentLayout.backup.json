@@ -1,88 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\handlers\\defaultclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.webapi\\controllers\\coursesunit\u0130nformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D5A5AA8-F04A-4AEB-BD4C-5DF3ACD04D15}|\u00DCNY.WebAPI\\\u00DCNY.WebAPI.csproj|solutionrelative:\u00FCny.webapi\\controllers\\coursesunit\u0130nformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|c:\\users\\azatc\\source\\repos\\\u00FCninotyay\u0131nlama\\\u00FCny.backofficeui\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B283FF8-2CCA-4070-9AB3-A71159E35E1A}|\u00DCNY.BackofficeUI\\\u00DCNY.BackofficeUI.csproj|solutionrelative:\u00FCny.backofficeui\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 328,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CoursesUnit\u0130nformationController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\CoursesUnit\u0130nformationController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.WebAPI\\Controllers\\CoursesUnit\u0130nformationController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.WebAPI\\Controllers\\CoursesUnit\u0130nformationController.cs",
-              "RelativeToolTip": "\u00DCNY.WebAPI\\Controllers\\CoursesUnit\u0130nformationController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAvwBwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T15:58:15.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Controllers\\ExamController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Controllers\\ExamController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAArwBQAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:00:37.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DefaultClient.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Handlers\\DefaultClient.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAArwBYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T16:00:37.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "\u00DCNY.BackofficeUI\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\azatc\\source\\repos\\\u00DCniNotYay\u0131nlama\\\u00DCNY.BackofficeUI\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "\u00DCNY.BackofficeUI\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T15:59:19.382Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

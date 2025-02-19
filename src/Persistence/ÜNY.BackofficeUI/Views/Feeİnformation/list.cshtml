@@ -1,0 +1,50 @@
+﻿@model ÜNY.Application.DTOs.FeeİnfoDTO
+@{
+    ViewData["Title"] = "list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-warning">
+            <p>@ViewBag.Message</p>
+        </div>
+    }
+    else if (Model != null)
+    {
+        <div class="card">
+            <div class="card-header">
+                <h3>Borç Bilgisi</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Kullanıcı Adı</th>
+                            <th>Borç Türü</th>
+                            <th>Miktar</th>
+                            <th>Dönem</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.UserName</td>
+                            <td>@Model.DebtType</td>
+                            <td>@Model.Amount</td>
+                            <td>@Model.period</td>
+                            <td>@Model.Status</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <p>Herhangi bir borç kaydınız bulunmamaktadır.</p>
+        </div>
+    }
+</div>

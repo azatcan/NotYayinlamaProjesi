@@ -1,0 +1,258 @@
+﻿﻿@using ÜNY.WebAPI.Model.AccountModel
+@model RegisterModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="~/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="~/Admin/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+
+                            <form class="user" method="post" asp-antiforgery="true" enctype="multipart/form-data">
+                                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+                                <!-- Name -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="Name"
+                                               placeholder="Name" asp-for="Name" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="Name"></span>
+                                    </div>
+                                </div>
+
+                                <!-- SurName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="SurName"
+                                               placeholder="SurName" asp-for="SurName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="SurName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- UserName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="UserName"
+                                               placeholder="UserName" asp-for="UserName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="UserName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- IdNumber -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="IdNumber"
+                                               placeholder="TC Kimlik Numarası" asp-for="IdNumber" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="IdNumber"></span>
+                                    </div>
+                                </div>
+
+                                <!-- DateOfBirth -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="date" class="form-control form-control-user" id="DateofBirth"
+                                               placeholder="Doğum Tarihi" asp-for="DateofBirth" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="DateofBirth"></span>
+                                    </div>
+                                </div>
+
+                                <!-- BirthPlace -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="BirthPlace"
+                                               placeholder="Doğum Yeri" asp-for="BirthPlace" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="BirthPlace"></span>
+                                    </div>
+                                </div>
+
+                                <!-- MotherName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="MotherName"
+                                               placeholder="Anne Adı" asp-for="MotherName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="MotherName"></span>
+                                    </div>
+                                </div>
+
+                                <!-- FatherName -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="FatherName"
+                                               placeholder="Baba Adı" asp-for="FatherName" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="FatherName"></span>
+                                    </div>
+                                </div>
+
+                                <select id="genderDropdown" class="form-control">
+                                    <option value="">Seçiniz</option>
+                                </select>
+
+                                <!-- Unit Dropdown -->
+                                <select id="unitDropdown" class="form-control">
+                                    <option value="">Seçiniz</option>
+                                </select>
+
+                                <input type="hidden" id="genderId" name="genderId" />
+                                <input type="hidden" id="unitId" name="unitİnformationId" />
+
+                         
+                                <!-- Password -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="Password" placeholder="Password" asp-for="Password" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="Password"></span>
+                                    </div>
+
+                                    <!-- RePassword -->
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                               id="RePassword" placeholder="RePassword" asp-for="RePassword" />
+                                        <br />
+                                        <span class="text-danger" asp-validation-for="RePassword"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Image Path (User Image) -->
+                                <div class="form-group row">
+                                    <label for="ImagePath">Kullanıcı Görseli</label>
+                                    <input type="file" class="form-control" name="ImagePath" />
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
+
+                                <hr>
+
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+
+                           
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://localhost:7212/api/Account/getGenderlist',
+                method: 'GET',
+                success: function (data) {
+                    var genderDropdown = $('#genderDropdown');
+                    genderDropdown.empty(); 
+                    genderDropdown.append('<option value="">Seçiniz</option>'); 
+                    
+
+                    
+                    $.each(data, function (index, gender) {
+                        genderDropdown.append('<option value="' + gender.id + '">' + gender.name + '</option>');
+                    });
+                },
+                error: function () {
+                    alert('Error loading gender data');
+                }
+            });
+
+           
+            $.ajax({
+                url: 'https://localhost:7212/api/Account/getUnitlist',
+                method: 'GET',
+                success: function (data) {
+                    var unitDropdown = $('#unitDropdown');
+                    unitDropdown.empty(); 
+                    unitDropdown.append('<option value="">Seçiniz</option>'); 
+
+                    
+                    $.each(data, function (index, unit) {
+                        unitDropdown.append('<option value="' + unit.id + '">' + unit.unitName  + '</option>');
+                    });
+                },
+                error: function () {
+                    alert('Error loading unit data');
+                }
+            });
+             $('#genderDropdown').change(function () {
+            var selectedGenderId = $(this).val();
+            $('#genderId').val(selectedGenderId);  
+        });
+
+        
+        $('#unitDropdown').change(function () {
+            var selectedUnitId = $(this).val();  
+            $('#unitId').val(selectedUnitId);  
+        });
+        });
+    </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/Admin/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

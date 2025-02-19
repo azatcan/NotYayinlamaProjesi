@@ -1,0 +1,56 @@
+﻿@using ÜNY.Domain.Entities
+@model List<Enrollment>
+@{
+    ViewData["Title"] = "AdminApproveEnrollment";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Pending Enrollments</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var enrollment in Model)
+        {
+            <tr>
+                <td>@enrollment.Users.Name</td>
+                <td>@enrollment.Course.CourseName</td>
+                <td>@(enrollment.Status ? "Approved" : "Pending")</td>
+                <td>
+                    @if (!enrollment.Status) 
+                    {
+                        <button class="btn btn-success" onclick="approveEnrollment('@enrollment.Id')">Approve</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+       function approveEnrollment(enrollmentId) {
+        $.ajax({
+            url: 'https://localhost:7212/api/AdminEnrollAprove/ApproveEnrollment/',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ Id: enrollmentId }), 
+            success: function(response) {
+                alert(response.Message);
+                location.reload();
+            },
+            error: function(xhr, status, error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+</script>
+
+
